@@ -12,8 +12,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class SelenideCardTest {
 
     public String localDate(int day) {
-        LocalDate date = LocalDate.now();
-        String plusDays = String.valueOf(LocalDate.now());
         return LocalDate.now().plusDays(day).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
